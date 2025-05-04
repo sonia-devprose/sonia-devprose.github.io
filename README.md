@@ -8,4 +8,18 @@ Check out the login form at: https://sonia-devprose.github.io/index.html
 5. Log out of the dashboard to again redirect to the login form.
    ![Screenshot 2025-05-04 195437](https://github.com/user-attachments/assets/bebfba9f-ca85-4d40-988c-cc6f12ddcc6a)
 
+   This project features a basic HTML/CSS/JavaScript login page with:
+
+👁️ Password visibility toggle using an eye icon
+
+✅ Fake login validation with predefined credentials (test@example.com, Test@123)
+
+🧠 LocalStorage support for storing user email upon successful login
+
+📄 Redirect to dashboard.html after login
+
+⚠️ Frontend alerts for missing/invalid input
+
+Ideal for learning frontend form handling and client-side validation!
+
 
