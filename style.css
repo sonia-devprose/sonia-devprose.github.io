@@ -1,0 +1,199 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Container Styles */
+.container.forms {
+  height: 100vh;
+  width: 100%;
+  background-color: #BBDFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Form Styles */
+.form.login {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-content header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #496580;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Field Styles */
+.field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.field.input-field {
+  height: 50px;
+  width: 100%;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #0171d3;
+  box-shadow: 0 0 0 2px rgba(1, 113, 211, 0.2);
+}
+
+/* Eye Icon */
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+
+.bxs-show {
+  color: green;
+}
+
+.bxs-hide {
+  color: red;
+}
+
+
+/* Form Links */
+.form-link {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.form-link a {
+  color: #0171d3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.button-field button {
+  width: 100%;
+  height: 50px;
+  background-color: #0171d3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-field button:hover {
+  background-color: #016dcb;
+}
+
+/* Line Divider */
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  max-width: 430px;
+  background-color: #d4d4d4;
+  margin: 25px 0;
+}
+
+.line::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  color: #232836;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+/* Facebook Button Styles */
+.media-options {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-options a.field.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  background-color:#0077B5;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.media-options a.field.linkedin:hover {
+  background-color: #3b5998;
+}
+
+.linkedin-icon {
+  font-size: 20px;
+}
+
+.eye-icon:hover {
+  color: #0171d3;  /* Change to highlight on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .form.login {
+    padding: 20px;
+  }
+  
+  .form-content header {
+    font-size: 24px;
+  }
+  
+  .field.input-field {
+    height: 45px;
+  }
+  
+  .button-field button {
+    height: 45px;
+  }
+}
+
